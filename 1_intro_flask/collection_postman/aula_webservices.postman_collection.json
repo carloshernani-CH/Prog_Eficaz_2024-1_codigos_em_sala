@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "eb2b4ebd-595f-4278-ae69-eb37cc48e3f6",
+		"name": "aula_webservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5424777"
+	},
+	"item": [
+		{
+			"name": "teste webservice cep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "viacep.com.br/ws/09320330/json/",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"09320330",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar aluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Tiago\",\r\n    \"idade\": 20,\r\n    \"curso\": \"Engenharia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/cadastra_aluno",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"cadastra_aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista alunos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/lista_alunos",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"lista_alunos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
